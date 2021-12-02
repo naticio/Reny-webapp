@@ -8,7 +8,7 @@ app.get("", (req, res) => {
 });
 
 app.get("/apple-app-site-association", (request, response) => {
-  response.send(__dirname + "/apple-app-site-association");
+  response.sendFile(__dirname + "/apple-app-site-association");
 });
 
 // app.get("/apple-app-site-association", (req, res) => {
