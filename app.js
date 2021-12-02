@@ -3,13 +3,11 @@ const app = require("express")();
 
 const PORT = process.env.PORT || 3000;
 
-// app.get("", (req, res) => {
-//   res.send("Reny webapp");
-// });
+app.get("", (req, res) => {
+  res.send("Reny webapp");
+});
 
-app.get(
-  "/apple-app-site-association",
-  function (request, response) {
+app.get("/apple-app-site-association", (request, response) {
     response.sendFile(__dirname + "/apple-app-site-association");
   }
 );
