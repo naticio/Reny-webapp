@@ -7,10 +7,9 @@ app.get("", (req, res) => {
   res.send("Reny webapp");
 });
 
-app.get("/apple-app-site-association", (request, response) {
-    response.sendFile(__dirname + "/apple-app-site-association");
-  }
-);
+app.get("/apple-app-site-association", (request, response) => {
+  response.sendFile(__dirname + "/apple-app-site-association");
+});
 
 // app.get("/apple-app-site-association", (req, res) => {
 //   res.send("apple-app-site-association");
