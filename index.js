@@ -1,6 +1,8 @@
 var express = require("express");
 var server = express();
 
+const PORT = process.env.PORT || 3000;
+
 server.get(
   "/.well-known/apple-app-site-association",
   function (request, response) {
@@ -8,4 +10,8 @@ server.get(
   }
 );
 
-server.listen(80);
+//server.listen(80);
+
+server.listen(PORT, () => {
+  console.log(`App up at port ${PORT}`);
+});
