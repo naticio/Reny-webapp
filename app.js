@@ -7,9 +7,9 @@ app.get("", (req, res) => {
   res.send("Reny webapp");
 });
 
-app.get("/apple-app-site-association", (req, res) => {
-  res.send("apple-app-site-association");
-});
+// app.get("/apple-app-site-association", (req, res) => {
+//   res.send("apple-app-site-association");
+// });
 
 app.listen(PORT, () => {
   console.log(`App up at port ${PORT}`);
