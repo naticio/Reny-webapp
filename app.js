@@ -1,5 +1,5 @@
 const app = require("express")();
-//why does it fail?
+//var router = express.Router();
 
 const PORT = process.env.PORT || 3000;
 
