@@ -6,7 +6,9 @@ const PORT = process.env.PORT || 3000;
 server.get(
   "/.well-known/apple-app-site-association",
   function (request, response) {
-    response.sendFile(__dirname + "/apple-app-site-association");
+    response.sendFile(
+      "/.well-known/apple-app-site-association/apple-app-site-association"
+    );
   }
 );
 

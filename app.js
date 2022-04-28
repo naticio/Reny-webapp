@@ -3,8 +3,12 @@ const app = require("express")();
 
 const PORT = process.env.PORT || 3000;
 
-app.get("", (req, res) => {
-  res.send("Reny webapp");
+// app.get("", (req, res) => {
+//   res.send("Reny webapp");
+// });
+
+app.get("/", function (req, res) {
+  res.redirect("/index.html");
 });
 
 app.get("/apple-app-site-association", (request, response) => {
