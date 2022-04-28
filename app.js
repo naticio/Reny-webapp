@@ -1,5 +1,6 @@
 const app = require("express")();
 //var router = express.Router();
+const path = require("path");
 
 const PORT = process.env.PORT || 3000;
 
@@ -7,8 +8,13 @@ const PORT = process.env.PORT || 3000;
 //   res.send("Reny webapp");
 // });
 
+// app.get("/", function (req, res) {
+//   res.redirect("/src/index.html");
+// });
+
+// sendFile will go here
 app.get("/", function (req, res) {
-  res.redirect("/src/index.html");
+  res.sendFile(path.join(__dirname, "/src/index.html"));
 });
 
 app.get("/apple-app-site-association", (request, response) => {
