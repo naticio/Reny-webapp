@@ -1,4 +1,5 @@
 const app = require("express")();
+var express = require("express");
 //var router = express.Router();
 const path = require("path");
 
@@ -11,6 +12,9 @@ const PORT = process.env.PORT || 3000;
 // app.get("/", function (req, res) {
 //   res.redirect("/src/index.html");
 // });
+
+//app.use(express.static("imgs"));
+app.use(express.static("public"));
 
 // sendFile will go here
 app.get("/", function (req, res) {
