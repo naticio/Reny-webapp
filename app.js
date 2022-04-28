@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 // });
 
 app.get("/", function (req, res) {
-  res.redirect("/index.html");
+  res.redirect("/src/index.html");
 });
 
 app.get("/apple-app-site-association", (request, response) => {
